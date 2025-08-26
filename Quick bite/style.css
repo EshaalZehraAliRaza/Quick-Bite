@@ -1,0 +1,403 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Barlow Condensed", sans-serif;
+}
+
+.nav-two li {
+  font-size: 1.3rem;
+}
+
+button {
+  font-size: 1.3rem;
+}
+
+p {
+  font-size: 1.2rem;
+}
+
+ul {
+  list-style: none;
+}
+
+.highlight-this {
+  color: #b10505;
+}
+
+/* Navbar */
+
+.nav-two {
+  background-color: #ffffff;
+  border-bottom: 2px solid #b3b3b3;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+  height: 5.2rem;
+  color: black;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-left: 4rem;
+  padding-right: 4rem;
+}
+
+.Delivery-sec {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.Delivery-p {
+  display: flex;
+  flex-direction: column;
+  padding-left: .4rem;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  font-weight: bold;
+  gap: 3rem;
+}
+
+.nav-li-a {
+  text-decoration: none;
+  color: black;
+  position: relative;
+  padding-bottom: 0.5rem;
+}
+
+li .nav-li-a:hover {
+  color: #b10505;
+}
+
+.nav-li-a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 2px;
+  width: 0;
+  background-color: #b10505;
+  transition: width 0.4s ease;
+}
+
+.nav-li-a:hover::after {
+  width: 100%;
+}
+
+.logo {
+  height: 3.5rem;
+}
+
+.button-sec {
+  display: flex;
+  align-items: center;
+  margin-left: 1rem;
+  gap: 2rem;
+}
+
+.button {
+  color: #ffffff;
+  border-radius: 0.3rem;
+  cursor: pointer;
+  height: 3rem;
+}
+
+.button-cart {
+  background-color: #00833e;
+  height: 3rem;
+  width: 3.3rem;
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.button-cart:hover {
+  background-color: #b10505;
+}
+
+.button-login {
+  color: #ffffff;
+  background-color: #b10505;
+  height: 3rem;
+  width: 6rem;
+  font-weight: bold;
+  border: none;
+  border-radius: 0.3rem;
+  position: relative;
+  background: #b10505;
+  overflow: hidden;
+  z-index: 1;
+}
+
+.button-login::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: #00833e;
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.4s ease;
+  z-index: -1;
+}
+
+/* hover effect */
+.button-login:hover::before {
+  transform: scaleX(1);
+}
+
+.button-login:hover {
+  color: #ffffff;
+}
+
+.cart {
+  font-size: x-large;
+  margin-right: 3rem;
+  color: #ffffff;
+  padding-left: 1.5rem;
+}
+
+.locate {
+  margin-right: 0rem;
+}
+
+/* Hero Section */
+.hero {
+  display: flex;
+}
+
+.hero-img {
+  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.2)), url("hero one.jpg") no-repeat center center;
+  background-size: cover;
+
+  width: 45%;
+  height: 52rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo-icon {
+  height: 7rem;
+  z-index: 2;
+}
+
+.circle-border {
+  width: 15rem;
+  height: 15rem;
+  border: none;
+  border-radius: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  animation: rotateBorder 5s linear infinite;
+}
+
+@keyframes rotateBorder {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.hero-main-img {
+  background: url("herotwo.png") no-repeat center center;
+  background-size: cover;
+  width: 55%;
+  height: 52rem;
+  display: flex;
+  align-items: center;
+  color: #ffffff;
+}
+
+.hero-text {
+  margin-left: 3rem;
+  font-weight: bolder;
+  font-style: normal;
+}
+
+.h-one {
+  font-size: 8rem;
+  margin-bottom: 1rem;
+  line-height: 7rem;
+  padding-bottom: 2.5rem;
+}
+
+.highlight {
+  color: #ffffff;
+
+}
+
+.sale {
+  color: #b10505;
+  font-weight: bold;
+  margin: 1rem 0;
+  font-size: 2rem;
+}
+
+.hero-text p {
+  margin-top: 1rem;
+  font-size: 1.5rem;
+  color: #ddd;
+  max-width: 500px;
+  font-weight: bold;
+}
+
+.btn {
+  margin-top: 1.5rem;
+  display: inline-block;
+  padding: 0.8rem 2rem;
+  background: #0ca545;
+  color: #fff;
+  font-weight: bold;
+  border: none;
+  border-radius: 0.3rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-decoration: none;
+  width: 12rem;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+}
+
+
+.btn::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: #b10505;
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.4s ease;
+  z-index: -1;
+}
+
+.btn:hover {
+  background: #0ca545;
+  color: #ffffff;
+  transform: scale(1.05);
+}
+
+.btn:hover::before {
+  transform: scaleX(1);
+}
+
+/* Best selling dishes */
+
+.Best-selling-dishes {
+  padding-bottom: 12rem;
+  background-color: #ebe7e5;
+}
+
+.Best-box {
+  height: 70vh;
+  background-color: #ebe7e5;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  color: black;
+  gap: 3rem;
+  padding-top: 10rem;
+}
+
+.boxes {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  height: 25rem;
+  width: 19rem;
+  text-wrap: wrap;
+  background-color: #fff;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+  border-radius: 2rem;
+}
+.h-2:hover{
+  color: #00833e;
+}
+.box1 {
+  height: 14rem;
+}
+
+.box-p {
+  padding-top: 0.6rem;
+  text-align: left;
+}
+
+.price-cart {
+  display: flex;
+  justify-content: space-around;
+  gap: 8rem;
+  padding-bottom: 6rem;
+}
+
+.price {
+  font-weight: bold;
+  color: #b10505;
+  font-size: 1.4rem;
+}
+
+.all-boxes {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 3rem;
+}
+
+.selling-heading {
+  font-size: 3rem;
+  padding-right: 60rem;
+}
+
+.top-deals {
+  padding-right: 73rem;
+}
+
+/* Footer */
+
+.footer-ul {
+  height: 40vh;
+  background-color: #ebe7e5;
+  border-top: 1px solid #b3b3b3;
+  border-bottom: 1px solid #b3b3b3;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6rem;
+  font-size: 0.9rem;
+  line-height: 1.8rem;
+  font-weight: 500;
+  color: #464646;
+}
+
+.fot-p {
+  color: black;
+  font-size: 1rem;
+  padding-bottom: 1.5rem;
+}
+
+.last-fot {
+  height: 3rem;
+  background-color: #ebe7e5;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #464646;
+  font-size: 0.9rem;
+}
