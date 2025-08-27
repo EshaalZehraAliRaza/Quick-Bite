@@ -334,22 +334,57 @@ li .nav-li-a:hover {
 
 /* Best selling dishes  */
 
-.Best-selling-dishes {
-  padding-bottom: 12rem;
+/* .Best-selling-dishes {
+  
+ 
+} */
+.BEST-SELLING{
+ background-color: #ebe7e5;
+ display: flex;
+ align-items: center;
+ justify-content: center;
+}
+.Best-box-context{
   background-color: #ebe7e5;
+  height: 10rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  flex-direction: column;
+  font-size: 2.5rem;
+  padding-top: 3rem;
+}
+.section-titlee {
+  text-align: center;
+  
+  font-weight: bold;
+  color: #000000;
+  
+  position: relative;
+}
+
+.section-titlee::after {
+  content: "";
+  display: block;
+  width: 80px;
+  height: 3px;
+  background: #b10505;
+  margin: 0.5rem auto 0;
 }
 
 .Best-box {
-  height: 70vh;
+  height: 55vh;
   background-color: #ebe7e5;
   display: flex;
   align-items: center;
   justify-content: center;
-  flex-direction: row;
+  flex-direction: column;
   flex-wrap: wrap;
   color: black;
   gap: 3rem;
-  padding-top: 10rem;
+  padding-top: 0rem;
+  padding-bottom: 3rem;
 }
 
 .boxes {
@@ -379,6 +414,11 @@ li .nav-li-a:hover {
 
 .box1 {
   height: 14rem;
+  transition: transform 0.4s ease;
+}
+
+.box1:hover {
+  transform: scale(1.2); /* zoom-in effect */
 }
 
 .box-p {
@@ -405,12 +445,14 @@ li .nav-li-a:hover {
   flex-wrap: wrap;
   gap: 3rem;
 }
-
-.selling-heading {
+.BEST-SELLING-DISHES{
+  background-color: #ebe7e5;
+}
+/* .selling-heading {
   font-size: 3rem;
   padding-right: 25rem;
  padding-left: 25rem;
-}
+} */
 
 .top-deals {
   padding-right: 25rem;
