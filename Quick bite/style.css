@@ -7,7 +7,7 @@
 }
 
 .nav-two li {
-  font-size: 1.3rem;
+  font-size: 1.1rem;
 }
 
 button {
@@ -88,7 +88,7 @@ li .nav-li-a:hover {
 }
 
 .logo {
-  height: 3.5rem;
+  height: 2.7rem;
 }
 
 .button-sec {
@@ -131,6 +131,7 @@ li .nav-li-a:hover {
   background: #b10505;
   overflow: hidden;
   z-index: 1;
+  font-size: 1.1rem;
 }
 
 .button-login::before {
@@ -184,7 +185,7 @@ li .nav-li-a:hover {
 }
 
 .logo-icon {
-  height: 7rem;
+  height: 6rem;
   z-index: 2;
 }
 
@@ -305,8 +306,8 @@ li .nav-li-a:hover {
 }
 
 .about-sec {
-  height: 84%;
-  width: 87%;
+  height: 90%;
+  width: 89%;
   background-color: #ebe7e5;
   display: flex;
 }
@@ -338,13 +339,14 @@ li .nav-li-a:hover {
   
  
 } */
-.BEST-SELLING{
- background-color: #ebe7e5;
- display: flex;
- align-items: center;
- justify-content: center;
+.BEST-SELLING {
+  background-color: #ebe7e5;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
-.Best-box-context{
+
+.Best-box-context {
   background-color: #ebe7e5;
   height: 10rem;
   display: flex;
@@ -353,14 +355,15 @@ li .nav-li-a:hover {
   text-align: center;
   flex-direction: column;
   font-size: 2.5rem;
-  padding-top: 3rem;
+
 }
+
 .section-titlee {
   text-align: center;
-  
+
   font-weight: bold;
   color: #000000;
-  
+
   position: relative;
 }
 
@@ -371,6 +374,78 @@ li .nav-li-a:hover {
   height: 3px;
   background: #b10505;
   margin: 0.5rem auto 0;
+}
+
+.search-box {
+  width: 60rem;
+  padding: 12px 45px 12px 20px;
+  font-size: 18px;
+  border: 1px solid #b10505;
+  border-radius: 1rem;
+  outline: none;
+}
+
+.search-container {
+  background-color: #ebe7e5;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+
+  height: 9rem;
+  /* margin-top: 4rem; */
+}
+
+/* Typing animation for placeholder */
+.search-box::placeholder {
+  color: #b10505;
+  opacity: 1;
+  animation: typing 5s steps(25) infinite;
+}
+
+@keyframes typing {
+  0% {
+    content: "S";
+  }
+
+  10% {
+    content: "Se";
+  }
+
+  20% {
+    content: "Sea";
+  }
+
+  30% {
+    content: "Sear";
+  }
+
+  40% {
+    content: "Searc";
+  }
+
+  50% {
+    content: "Search";
+  }
+
+  60% {
+    content: "Search f";
+  }
+
+  70% {
+    content: "Search fo";
+  }
+
+  80% {
+    content: "Search for";
+  }
+
+  90% {
+    content: "Search for fudge";
+  }
+
+  100% {
+    content: "";
+  }
 }
 
 .Best-box {
@@ -399,14 +474,21 @@ li .nav-li-a:hover {
   padding-left: 1.5rem;
   padding-right: 1.5rem;
   border-radius: 2rem;
-  transition: transform 0.3s;
+  transition: transform 0.4s ease;
 }
 
 .boxes:hover {
-  transform: translateY(-5px);
+  transform: scale(1.05);
+  border: 2px solid #b10505;
 }
 
-
+.view-more {
+  background-color: #ebe7e5;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  height: 8rem;
+}
 
 .h-2:hover {
   color: #00833e;
@@ -418,7 +500,8 @@ li .nav-li-a:hover {
 }
 
 .box1:hover {
-  transform: scale(1.2); /* zoom-in effect */
+  transform: scale(1.2);
+  /* zoom-in effect */
 }
 
 .box-p {
@@ -445,9 +528,11 @@ li .nav-li-a:hover {
   flex-wrap: wrap;
   gap: 3rem;
 }
-.BEST-SELLING-DISHES{
+
+.BEST-SELLING-DISHES {
   background-color: #ebe7e5;
 }
+
 /* .selling-heading {
   font-size: 3rem;
   padding-right: 25rem;
@@ -642,16 +727,17 @@ li .nav-li-a:hover {
 
 .blog-content {
   padding: 22px;
+  margin-top: 1rem;
 }
 
 .blog-content h2 {
   margin: 0;
   font-size: 22px;
-  color: #333;
+  color: #b10505;
 }
 
 .blog-content p {
-  color: #555;
+  color: #000000;
   margin: 10px 0 15px;
   line-height: 1.5;
 }
@@ -708,6 +794,7 @@ li .nav-li-a:hover {
   color: #464646;
   font-size: 0.9rem;
 }
+
 /* Responsive */
 
 @media (max-width: 1024px) {
@@ -737,6 +824,7 @@ li .nav-li-a:hover {
 
 /* Mobile Large */
 @media (max-width: 768px) {
+
   /* Navbar */
   .nav-two {
     flex-direction: column;
