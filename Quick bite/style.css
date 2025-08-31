@@ -5,7 +5,19 @@
   font-family: "Barlow Condensed", sans-serif;
   scroll-behavior: smooth;
 }
+::-webkit-scrollbar{
+  width: 0.9rem;
+  background-color: #d8d4d1
+;
+}
+::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  background-color: #b10505;
+}
+::-webkit-scrollbar-thumb:hover {
 
+  background-color: #b10505;
+}
 .nav-two li {
   font-size: 1.1rem;
 }
