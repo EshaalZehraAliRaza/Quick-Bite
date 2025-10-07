@@ -18,6 +18,220 @@
 
 <body>
 
+<!-- Location Selection Page -->
+  <div class="location-page" id="locationPage">
+    <!-- <div class="location-header">
+      <h1>QuickBite</h1>
+      <p>Food Delivery & Dine-in</p>
+    </div> -->
+
+    <div class="order-type-section">
+      <h2>Select your order type</h2>
+      <button class="order-type-btn active" id="deliveryBtn">
+        <i class="fas fa-motorcycle"></i> DELIVERY
+      </button>
+      <button class="order-type-btn" id="pickupBtn">
+        <i class="fas fa-store"></i> PICKUP
+      </button>
+    </div>
+
+    <div class="location-section">
+      <h2>Please select your location</h2>
+      
+      <div class="location-option" id="currentLocationBtn">
+        <i class="fas fa-location-crosshairs"></i>
+        <span>Use Current Location</span>
+      </div>
+      
+      <div class="location-option" id="manualLocationBtn">
+        <i class="fas fa-map-marker-alt"></i>
+        <span>Select Location Manually</span>
+      </div>
+
+      <select class="location-dropdown" id="locationDropdown" style="display: none;">
+        <option value="">Select your city</option>
+        <option value="houston">karachi</option>
+        <option value="houston">Lahore</option>
+        <option value="new-york">Nazmabad</option>
+        <option value="los-angeles">Korangi</option>
+        <option value="chicago">North Nazmabad</option>
+        <option value="miami">Kashmir</option>
+        <option value="houston">sindh</option>
+      </select>
+
+      <button class="select-btn" id="selectLocationBtn">Select & Continue</button>
+    </div>
+  </div>
+
+   <!-- Main Website Content (Hidden Initially)  -->
+  <div class="main-content" id="mainContent">
+    
+     <!-- Your existing website content starts here  -->
+    <!-- <div class="nav-two">
+      <div class="logo-sec">
+        <i class="bars fa-solid fa-bars"></i>
+      </div>
+      <img src="Quick Bite Logo.png" alt="logo" class="logo">
+      <ul class="nav-links">
+        <li class="nav-li"><a href="#Hero-sec" alt="MENU" class="nav-li-a">HOME</a></li>
+        <li class="nav-li"><a href="#about" alt="PAGES" class="nav-li-a">ABOUT</a></li>
+        <li class="nav-li"><a href="#Best-selling-dishes" alt="PAGES" class="nav-li-a">MENU</a></li>
+        <li class="nav-li"><a href="#Our-Blog" alt="BLOG" class="nav-li-a">BLOG</a></li>
+        <li class="nav-li"><a href="#contact" alt="CONTACT" class="nav-li-a">CONTACT</a></li>
+      </ul>
+
+      <div class="button-sec">
+        <button class=" button button-login">LOGIN</button>
+        <button class="button button-cart"><i class="fa-brands fa-opencart cart"></i></button>
+      </div>
+    </div> -->
+
+     <!-- Rest of your existing HTML content 
+     ... (your existing sections: Hero, About, Menu, etc.) ...  -->
+
+  </div>
+
+<!-- Login Page -->
+<div class="login-page" id="loginPage">
+  <div class="login-overlay" id="loginOverlay"></div>
+  <div class="login-container">
+    <div class="login-header">
+      <h2>Welcome!</h2>
+      <button class="close-login" id="closeLogin">
+        <i class="fas fa-times"></i>
+      </button>
+    </div>
+    
+    <div class="login-content">
+      <form class="login-form">
+        <div class="form-group">
+          <label for="phoneNumber">Home Number (2020/09/02/05)</label>
+          <div class="phone-input-container">
+            <div class="country-code">
+              <span>+92</span>
+            </div>
+            <input type="tel" id="phoneNumber" placeholder="Enter your phone number" required>
+          </div>
+        </div>
+        
+        <button type="submit" class="login-btn">LOGIN</button>
+        
+        <div class="login-divider">
+          <span>OR</span>
+        </div>
+        
+        <button type="button" class="login-with-concepts">
+          LOGIN WITH CONCEPTS
+        </button>
+        
+        <div class="login-footer">
+          <p>Don't have an account? <a href="#" class="signup-link">Sign up</a></p>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
+
+<!-- Mobile Menu Sidebar -->
+<div class="mobile-menu" id="mobileMenu">
+  <div class="mobile-menu-header">
+    <div class="mobile-menu-logo">
+      <img src="Quick Bite Logo.png" alt="QuickBite" class="mobile-logo">
+      <!-- <span>QuickBite</span> -->
+    </div>
+    <button class="close-mobile-menu" id="closeMobileMenu">
+      <i class="fas fa-times"></i>
+    </button>
+  </div>
+
+  <div class="mobile-menu-content">
+    <!-- DOWNLOAD OUR APP Section -->
+    <div class="mobile-app-section">
+      <h3>DOWNLOAD OUR APP</h3>
+    </div>
+
+    <div class="mobile-menu-divider"></div>
+
+    <!-- Additional Menu Items -->
+    <div class="mobile-additional-links">
+      <a href="#" class="additional-link">
+        <i class="fas fa-map-marker-alt"></i>
+        <span>Our Location</span>
+      </a>
+      
+      <a href="#" class="additional-link">
+        <i class="fas fa-birthday-cake"></i>
+        <span>Customized Foods</span>
+      </a>
+      <a href="#" class="additional-link">
+        <i class="fas fa-briefcase"></i>
+        <span>Careers</span>
+      </a>
+      <a href="#" class="additional-link">
+        <i class="fas fa-newspaper"></i>
+        <span>Blog</span>
+      </a>
+      <div class="dark-mode-toggle">
+        <i class="fas fa-moon"></i>
+        <span>Dark Mode</span>
+        <label class="switch">
+          <input type="checkbox" id="darkModeToggle">
+          <span class="slider"></span>
+        </label>
+      </div>
+    </div>
+
+    <div class="mobile-menu-divider"></div>
+
+    <!-- New Arrivals Section -->
+    <!-- <div class="mobile-menu-section">
+      <h3>New Arrivals</h3>
+      <p class="mobile-menu-subtitle">Sandwiches</p>
+    </div> -->
+
+    <!-- Search Bar -->
+    <div class="mobile-search">
+      <input type="text" placeholder="Search for any food item..." class="mobile-search-input">
+      <i class="fas fa-search"></i>
+    </div>
+
+    <div class="mobile-menu-divider"></div>
+
+    <!-- Promotional Section -->
+    <div class="mobile-promo">
+      <div class="promo-badge">
+        <span class="flat-text">Flat</span>
+        <span class="percentage">20% Off</span>
+      </div>
+      
+      <div class="promo-item">
+        <div class="promo-item-info">
+          <h4>Broast</h4>
+          <div class="promo-price">
+            <span class="original-price">Rs. 240</span>
+            <span class="discounted-price">Rs. 168</span>
+          </div>
+        </div>
+      </div>
+      
+      <div class="promo-item">
+        <div class="promo-item-info">
+          <h4>Nuggets</h4>
+          <div class="promo-price">
+            <span class="original-price">Rs. 210</span>
+            <span class="discounted-price">Rs. 168</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="mobile-menu-overlay" id="mobileMenuOverlay"></div>
+
+
+<!--nav-->
+
   <div class="nav-two">
     <div class="logo-sec">
       <i class="bars fa-solid fa-bars"></i>
@@ -32,9 +246,10 @@
     </ul>
 
     <div class="button-sec">
-      <button class=" button button-login">LOGIN</button>
-      <button class="button button-cart"><i class="fa-brands fa-opencart cart"></i></button>
-    </div>
+  <button class="button button-login">LOGIN</button>
+  <!-- <button class="button button-cart"><i class="fa-brands fa-opencart cart"></i></button> -->
+  <button class="button button-cart" id="locationButton"><i class="fa-solid fa-location-dot cart controlling-map"></i></button>
+</div>
   </div>
   <!--Hero Section-->
   <section class="Hero-sec" id="Hero-sec">
@@ -64,7 +279,7 @@
   <!--About-->
   <section class="about" id="about">
     <div class="about-sec">
-      <img src="aboutpicc.jpg" alt="About Image" class="about-img">
+      <img src="aboutpicc.jpg" alt="About Image" class="about-img" oneerror="src='aboutpicc.jpg'">
       <div class="about-text">
         <h1 class=" about-h h-one">Best Fast Food ideas from the whole world</h1>
         <p>The mouth-watering aroma of sizzling burgers now fills the streets of Birmingham thanks to the passionate
@@ -247,7 +462,8 @@
           <h3>Send a Message</h3>
           <form>
             <input type="text" placeholder="Your Name" required>
-            <input type="email" placeholder="Your Email" class="Your-Email" required>
+            <!-- <input type="email" placeholder="Your Email" class="Your-Email" required> -->
+            <input type="email" placeholder="Email">
             <input type="text" placeholder="Subject">
             <textarea placeholder="Your Message" rows="5"></textarea>
             <button type="submit" class="Send-Message">Send Message</button>
@@ -268,7 +484,7 @@
   <div class="blog-container">
 
     <div class="blog-card">
-      <img src="blog 1.jpg" alt="Blog 1" class="box1">
+      <img src="blog 1.jpg" alt="Blog 1" class="box1" oneerror="src='blog 1.jpg'">
       <div class="blog-content">
         <h2>Quick Cravings: Unraveling Fast Food Delights</h2>
         <p>Ac haca ullamcorper donec ante habi tasse donec imperdiet eturpis varius. </p>
@@ -277,7 +493,7 @@
     </div>
 
     <div class="blog-card">
-      <img src="blog 2.jpg" alt="Blog 2" class="box1">
+      <img src="blog 2.jpg" alt="Blog 2" class="box1" oneerror="src='blog 2.jpg'">
       <div class="blog-content">
         <h2>Fast Food Frenzy: A Taste of Convenience</h2>
         <p>Ac haca ullamcorper donec ante habi tasse donec imperdiet eturpis varius.</p>
@@ -286,7 +502,7 @@
     </div>
 
     <div class="blog-card">
-      <img src="blog 3.jpg" alt="Blog 3" class="box1">
+      <img src="blog 3.jpg" alt="Blog 3" class="box1" oneerror="src='blog 3.jpg'">
       <div class="blog-content">
         <h2>Eating Fast, Tasting Great: Fast Food Secrets</h2>
         <p>Ac haca ullamcorper donec ante habi tasse donec imperdiet eturpis varius. </p>
@@ -306,7 +522,7 @@
       <p><small>Terms and conditions apply.</small></p>
 
       <form class="form-group">
-        <input type="email" placeholder="Your email address" required />
+        <input type="email" placeholder="Your email address" class="offer-email" required />
         <button type="submit" class="Send-Message SUBSCRIBE">SUBSCRIBE</button>
       </form>
 
@@ -355,5 +571,715 @@
   </section>
 
 </body>
+<script>
+
+
+// Location Selection Page JavaScript
+    document.addEventListener('DOMContentLoaded', function() {
+      // Get all elements
+      const locationPage = document.getElementById('locationPage');
+      const mainContent = document.getElementById('mainContent');
+      const deliveryBtn = document.getElementById('deliveryBtn');
+      const pickupBtn = document.getElementById('pickupBtn');
+      const currentLocationBtn = document.getElementById('currentLocationBtn');
+      const manualLocationBtn = document.getElementById('manualLocationBtn');
+      const locationDropdown = document.getElementById('locationDropdown');
+      const selectLocationBtn = document.getElementById('selectLocationBtn');
+
+      let selectedOrderType = 'delivery';
+      let selectedLocationMethod = '';
+
+      // Check if user has already selected location
+      const hasSelectedLocation = localStorage.getItem('quickbite-location-selected');
+      
+      if (hasSelectedLocation === 'true') {
+        // User has already selected location, show main content directly
+        locationPage.classList.add('hidden');
+        mainContent.classList.add('visible');
+      } else {
+        // Show location selection page
+        locationPage.classList.remove('hidden');
+        mainContent.classList.remove('visible');
+      }
+
+      // Order type selection
+      deliveryBtn.addEventListener('click', function() {
+        deliveryBtn.classList.add('active');
+        pickupBtn.classList.remove('active');
+        selectedOrderType = 'delivery';
+      });
+
+      pickupBtn.addEventListener('click', function() {
+        pickupBtn.classList.add('active');
+        deliveryBtn.classList.remove('active');
+        selectedOrderType = 'pickup';
+      });
+
+      // Location method selection
+      currentLocationBtn.addEventListener('click', function() {
+        selectedLocationMethod = 'current';
+        locationDropdown.style.display = 'none';
+        showLocationLoading();
+      });
+
+      manualLocationBtn.addEventListener('click', function() {
+        selectedLocationMethod = 'manual';
+        locationDropdown.style.display = 'block';
+      });
+
+      // Select location and continue
+      selectLocationBtn.addEventListener('click', function() {
+        if (selectedLocationMethod === '') {
+          alert('Please select a location method first!');
+          return;
+        }
+
+        if (selectedLocationMethod === 'manual' && locationDropdown.value === '') {
+          alert('Please select a city from the dropdown!');
+          return;
+        }
+
+        // Save selection to localStorage
+        localStorage.setItem('quickbite-location-selected', 'true');
+        localStorage.setItem('quickbite-order-type', selectedOrderType);
+        
+        if (selectedLocationMethod === 'manual') {
+          localStorage.setItem('quickbite-location', locationDropdown.value);
+        } else {
+          localStorage.setItem('quickbite-location', 'current');
+        }
+
+        // Hide location page and show main content
+        locationPage.classList.add('hidden');
+        setTimeout(() => {
+          mainContent.classList.add('visible');
+          // Scroll to top of main content
+          window.scrollTo(0, 0);
+        }, 500);
+
+        // Show welcome message
+        setTimeout(() => {
+          alert(`Welcome to QuickBite! ${selectedOrderType === 'delivery' ? 'Delivery' : 'Pickup'} service activated.`);
+        }, 600);
+      });
+
+      // Simulate current location detection
+      function showLocationLoading() {
+        const originalText = currentLocationBtn.querySelector('span').textContent;
+        currentLocationBtn.querySelector('span').textContent = 'Detecting location...';
+        currentLocationBtn.style.background = '#e0e0e0';
+        
+        setTimeout(() => {
+          currentLocationBtn.querySelector('span').textContent = 'Location detected!';
+          currentLocationBtn.style.background = '#d4edda';
+          currentLocationBtn.style.borderColor = '#c3e6cb';
+          
+          setTimeout(() => {
+            currentLocationBtn.querySelector('span').textContent = originalText;
+            currentLocationBtn.style.background = '#f8f8f8';
+            currentLocationBtn.style.borderColor = '#e0e0e0';
+            alert('Your current location has been detected! Click "Select & Continue" to proceed.');
+          }, 1500);
+        }, 2000);
+      }
+
+      // Optional: Add keyboard support
+      document.addEventListener('keydown', function(e) {
+        if (e.key === 'Escape' && !locationPage.classList.contains('hidden')) {
+          // Allow users to skip location selection (for demo purposes)
+          if (confirm('Skip location selection and view website?')) {
+            localStorage.setItem('quickbite-location-selected', 'true');
+            locationPage.classList.add('hidden');
+            mainContent.classList.add('visible');
+          }
+        }
+      });
+    });
+
+    // Your existing JavaScript code can go here
+    // ... (your existing JavaScript functionality) ...
+
+
+
+// Location Button Functionality
+const locationButton = document.getElementById('locationButton');
+
+locationButton.addEventListener('click', function() {
+  // Show location page
+  const locationPage = document.getElementById('locationPage');
+  locationPage.classList.remove('hidden');
+  
+  // Disable scrolling on body
+  document.body.classList.add('location-page-active');
+});
+
+
+// Login Functionality
+const loginPage = document.getElementById('loginPage');
+const loginOverlay = document.getElementById('loginOverlay');
+const closeLogin = document.getElementById('closeLogin');
+const loginButton = document.querySelector('.button-login');
+const loginForm = document.querySelector('.login-form');
+
+// Open login when login button is clicked
+loginButton.addEventListener('click', function() {
+  loginPage.classList.add('active');
+  document.body.style.overflow = 'hidden';
+});
+
+// Close login when close button is clicked
+closeLogin.addEventListener('click', function() {
+  loginPage.classList.remove('active');
+  document.body.style.overflow = 'auto';
+});
+
+// Close login when overlay is clicked
+loginOverlay.addEventListener('click', function() {
+  loginPage.classList.remove('active');
+  document.body.style.overflow = 'auto';
+});
+
+// Close login with Escape key
+document.addEventListener('keydown', function(e) {
+  if (e.key === 'Escape' && loginPage.classList.contains('active')) {
+    loginPage.classList.remove('active');
+    document.body.style.overflow = 'auto';
+  }
+});
+
+// Login form submission
+loginForm.addEventListener('submit', function(e) {
+  e.preventDefault();
+  
+  const phoneNumber = document.getElementById('phoneNumber').value;
+  
+  if (!phoneNumber) {
+    alert('Please enter your phone number');
+    return;
+  }
+  
+  // Simulate login process
+  alert('Login successful!');
+  loginPage.classList.remove('active');
+  document.body.style.overflow = 'auto';
+  
+  // You can add actual login logic here
+});
+
+// Login with concepts button
+const loginWithConcepts = document.querySelector('.login-with-concepts');
+loginWithConcepts.addEventListener('click', function() {
+  alert('Redirecting to CONCEPTS login...');
+  // Add actual CONCEPTS login integration here
+});
+
+// Sign up link
+const signupLink = document.querySelector('.signup-link');
+signupLink.addEventListener('click', function(e) {
+  e.preventDefault();
+  alert('Redirecting to sign up page...');
+  // Add actual sign up page navigation here
+});
+
+
+
+// Mobile Menu Functionality
+const mobileMenu = document.getElementById('mobileMenu');
+const mobileMenuOverlay = document.getElementById('mobileMenuOverlay');
+const closeMobileMenu = document.getElementById('closeMobileMenu');
+const barsIcon = document.querySelector('.bars');
+
+// Open mobile menu when bars icon is clicked
+if (barsIcon) {
+    barsIcon.addEventListener('click', function() {
+        mobileMenu.classList.add('active');
+        mobileMenuOverlay.classList.add('active');
+        document.body.style.overflow = 'hidden';
+    });
+}
+
+// Close mobile menu when close button is clicked
+if (closeMobileMenu) {
+    closeMobileMenu.addEventListener('click', function() {
+        mobileMenu.classList.remove('active');
+        mobileMenuOverlay.classList.remove('active');
+        document.body.style.overflow = 'auto';
+    });
+}
+
+// Close mobile menu when overlay is clicked
+if (mobileMenuOverlay) {
+    mobileMenuOverlay.addEventListener('click', function() {
+        mobileMenu.classList.remove('active');
+        mobileMenuOverlay.classList.remove('active');
+        document.body.style.overflow = 'auto';
+    });
+}
+
+// Close mobile menu with Escape key
+document.addEventListener('keydown', function(e) {
+    if (e.key === 'Escape' && mobileMenu.classList.contains('active')) {
+        mobileMenu.classList.remove('active');
+        mobileMenuOverlay.classList.remove('active');
+        document.body.style.overflow = 'auto';
+    }
+});
+
+// Dark Mode Functionality
+const darkModeToggle = document.getElementById('darkModeToggle');
+
+// Check for saved dark mode preference
+if (localStorage.getItem('darkMode') === 'enabled') {
+    document.body.classList.add('dark-mode');
+    if (darkModeToggle) darkModeToggle.checked = true;
+}
+
+// Dark mode toggle event
+if (darkModeToggle) {
+    darkModeToggle.addEventListener('change', function() {
+        if (this.checked) {
+            document.body.classList.add('dark-mode');
+            localStorage.setItem('darkMode', 'enabled');
+        } else {
+            document.body.classList.remove('dark-mode');
+            localStorage.setItem('darkMode', 'disabled');
+        }
+    });
+}
+
+// Additional Menu Items Functionality
+const additionalLinks = document.querySelectorAll('.additional-link');
+
+additionalLinks.forEach(link => {
+    link.addEventListener('click', function(e) {
+        e.preventDefault();
+        
+        const linkText = this.querySelector('span').textContent;
+        
+        // Close mobile menu
+        mobileMenu.classList.remove('active');
+        mobileMenuOverlay.classList.remove('active');
+        document.body.style.overflow = 'auto';
+        
+        // Handle different links
+        switch(linkText) {
+            case 'Our Location':
+                // Open location page
+                const locationPage = document.getElementById('locationPage');
+                if (locationPage) {
+                    locationPage.classList.remove('hidden');
+                    document.body.classList.add('location-page-active');
+                }
+                break;
+            case 'Customized Cakes':
+                alert('Customized Cakes section coming soon!');
+                break;
+            case 'Careers':
+                alert('Careers page coming soon!');
+                break;
+            case 'Blog':
+                // Scroll to blog section
+                const blogSection = document.getElementById('Our-Blog');
+                if (blogSection) {
+                    setTimeout(() => {
+                        blogSection.scrollIntoView({ behavior: 'smooth' });
+                    }, 300);
+                }
+                break;
+        }
+    });
+});
+
+// Search functionality for mobile menu
+const mobileSearchInput = document.querySelector('.mobile-search-input');
+if (mobileSearchInput) {
+    mobileSearchInput.addEventListener('keypress', function(e) {
+        if (e.key === 'Enter') {
+            const searchTerm = this.value.trim();
+            if (searchTerm) {
+                // Close mobile menu
+                mobileMenu.classList.remove('active');
+                mobileMenuOverlay.classList.remove('active');
+                document.body.style.overflow = 'auto';
+                
+                // Show search results (you can implement actual search here)
+                alert(`Searching for: ${searchTerm}`);
+                this.value = '';
+            }
+        }
+    });
+}
+
+// Add dark mode styles dynamically
+const darkModeStyles = `
+    <style id="darkModeStyles">
+        .dark-mode {
+            background: #1a1a1a;
+            color: #ffffff;
+        }
+        
+        .dark-mode .nav-two {
+            background: #2d2d2d;
+            border-bottom-color: #444;
+        }
+        
+        .dark-mode .nav-links .nav-li-a {
+            color: #ffffff;
+        }
+        
+        .dark-mode .nav-links .nav-li-a:hover {
+            color: #b10505;
+        }
+        
+        .dark-mode .button-login {
+            background: #b10505;
+            color: white;
+        }
+        
+        .dark-mode .button-cart {
+            background: #00833e;
+        }
+        
+        .dark-mode .mobile-menu {
+            background: #2d2d2d;
+            color: #ffffff;
+        }
+        
+        .dark-mode .mobile-menu-header {
+            background: #3d3d3d;
+            border-bottom-color: #444;
+        }
+        
+        .dark-mode .mobile-menu-logo span {
+            color: #ffffff;
+        }
+        
+        .dark-mode .mobile-search-input {
+            background: #3d3d3d;
+            border-color: #555;
+            color: #ffffff;
+        }
+        
+        .dark-mode .mobile-search-input::placeholder {
+            color: #999;
+        }
+        
+        .dark-mode .mobile-nav-link {
+            color: #ffffff;
+        }
+        
+        .dark-mode .mobile-nav-link:hover,
+        .dark-mode .mobile-nav-link.active {
+            background: #3d3d3d;
+            color: #b10505;
+        }
+        
+        .dark-mode .additional-link {
+            color: #ffffff;
+        }
+        
+        .dark-mode .additional-link:hover {
+            background: #3d3d3d;
+        }
+        
+        .dark-mode .dark-mode-toggle {
+            color: #ffffff;
+        }
+        
+        .dark-mode .dark-mode-toggle:hover {
+            background: #3d3d3d;
+        }
+        
+        .dark-mode .mobile-menu-section h3 {
+            color: #ffffff;
+        }
+        
+        .dark-mode .mobile-menu-subtitle {
+            color: #ccc;
+        }
+        
+        .dark-mode .promo-item {
+            background: #3d3d3d;
+        }
+        
+        .dark-mode .promo-item-info h4 {
+            color: #ffffff;
+        }
+        
+        .dark-mode .mobile-app-section h3 {
+            color: #ffffff;
+        }
+        
+        .dark-mode .mobile-menu-divider {
+            background: #444;
+        }
+        
+        .dark-mode .Hero-sec,
+        .dark-mode .about,
+        .dark-mode .Best-selling-dishes,
+        .dark-mode .booking,
+        .dark-mode .contact,
+        .dark-mode .Our-Blog,
+        .dark-mode .blog-container,
+        .dark-mode .offers,
+        .dark-mode .Footer-sec,
+        .dark-mode .last-footer {
+            background: #2d2d2d;
+            color: #ffffff;
+        }
+        
+        .dark-mode .h-one,
+        .dark-mode .about-h,
+        .dark-mode .section-title,
+        .dark-mode .section-titlee,
+        .dark-mode .hero-text p,
+        .dark-mode .about-text p,
+        .dark-mode .box-p,
+        .dark-mode .booking h1,
+        .dark-mode .contact-info h3,
+        .dark-mode .contact-info p,
+        .dark-mode .contact-form h3,
+        .dark-mode .blog-content h2,
+        .dark-mode .blog-content p,
+        .dark-mode .offer-container h1,
+        .dark-mode .offer-container p,
+        .dark-mode .footer-ul,
+        .dark-mode .last-fot {
+            color: #ffffff;
+        }
+        
+        .dark-mode .boxes {
+            background: #3d3d3d;
+            color: #ffffff;
+        }
+        
+        .dark-mode .blog-card {
+            background: #3d3d3d;
+        }
+        
+        .dark-mode .footer-ul {
+            background: #3d3d3d;
+        }
+        
+        .dark-mode .last-fot {
+            background: #3d3d3d;
+        }
+    </style>
+`;
+
+// Only add dark mode styles if not already added
+if (!document.getElementById('darkModeStyles')) {
+    document.head.insertAdjacentHTML('beforeend', darkModeStyles);
+}
+
+// Initialize mobile menu on page load
+document.addEventListener('DOMContentLoaded', function() {
+    console.log('Mobile menu functionality loaded successfully!');
+    
+    // Check if mobile menu elements exist
+    if (!mobileMenu) {
+        console.error('Mobile menu element not found!');
+    }
+    
+    if (!barsIcon) {
+        console.error('Bars icon element not found!');
+    }
+});
+
+
+
+  // Mobile Menu Toggle
+  const menuToggle = document.querySelector('.bars');
+  const navLinks = document.querySelector('.nav-links');
+
+  menuToggle.addEventListener('click', () => {
+    // Toggle mobile menu visibility
+    navLinks.classList.toggle('active');
+  });
+
+  // Smooth Scrolling for Navigation Links
+  document.querySelectorAll('.nav-li-a').forEach(link => {
+    link.addEventListener('click', function(e) {
+      e.preventDefault();
+      
+      // Get the target section from href attribute
+      const targetId = this.getAttribute('href');
+      const targetSection = document.querySelector(targetId);
+      
+      // Smooth scroll to the section
+      targetSection.scrollIntoView({
+        behavior: 'smooth',
+        block: 'start'
+      });
+    });
+  });
+
+  // Add to Cart Functionality
+  const cartButtons = document.querySelectorAll('.button-cart');
+  
+  cartButtons.forEach(button => {
+    button.addEventListener('click', function() {
+      // Get product name from the nearest h2 element
+      const productName = this.closest('.boxes').querySelector('.h-2').textContent;
+      
+      // Show confirmation message
+      alert(`Added ${productName} to cart!`);
+      
+      // You can add more cart logic here later
+      console.log(`Product added: ${productName}`);
+    });
+  });
+
+  // Form Validation for Contact Form
+  const contactForm = document.querySelector('.contact-form form');
+  
+  contactForm.addEventListener('submit', function(e) {
+    e.preventDefault(); // Prevent form from submitting normally
+    
+    // Get form inputs
+    const name = this.querySelector('input[type="text"]').value;
+    const email = this.querySelector('input[type="email"]').value;
+    const message = this.querySelector('textarea').value;
+    
+    // Basic validation
+    if (name === '' || email === '' || message === '') {
+      alert('Please fill in all fields!');
+      return;
+    }
+    
+    // Simple email validation
+    if (!email.includes('@')) {
+      alert('Please enter a valid email address!');
+      return;
+    }
+    
+    // If validation passes
+    alert('Message sent successfully!');
+    this.reset(); // Clear the form
+  });
+
+  // Newsletter Subscription
+  const newsletterForm = document.querySelector('.form-group');
+  
+  newsletterForm.addEventListener('submit', function(e) {
+    e.preventDefault();
+    
+    const emailInput = this.querySelector('input[type="email"]');
+    const email = emailInput.value;
+    
+    if (email === '') {
+      alert('Please enter your email address!');
+      return;
+    }
+    
+    if (!email.includes('@')) {
+      alert('Please enter a valid email address!');
+      return;
+    }
+    
+    alert('Thank you for subscribing to our newsletter!');
+    emailInput.value = ''; // Clear the input
+  });
+
+  // Read More Buttons for Blog Posts
+  const readMoreButtons = document.querySelectorAll('.Read-More');
+  
+  readMoreButtons.forEach(button => {
+    button.addEventListener('click', function(e) {
+      e.preventDefault();
+      
+      // Get blog post title
+      const blogTitle = this.closest('.blog-content').querySelector('h2').textContent;
+      alert(`Reading more about: ${blogTitle}`);
+      
+      // You can add actual navigation to blog post here later
+    });
+  });
+
+  // Image Hover Effects Enhancement
+  const productImages = document.querySelectorAll('.box1');
+  
+  productImages.forEach(image => {
+    image.addEventListener('mouseenter', function() {
+      this.style.transform = 'scale(1.1)';
+      this.style.transition = 'transform 0.3s ease';
+    });
+    
+    image.addEventListener('mouseleave', function() {
+      this.style.transform = 'scale(1)';
+    });
+  });
+
+  // Scroll to Top Button
+  const scrollBtn = document.createElement('div');
+  scrollBtn.innerHTML = '⬆';
+  scrollBtn.className = 'scroll-btn';
+  document.body.appendChild(scrollBtn);
+
+  // Show/hide scroll button based on scroll position
+  window.addEventListener('scroll', () => {
+    if (window.pageYOffset > 300) {
+      scrollBtn.style.display = 'flex';
+    } else {
+      scrollBtn.style.display = 'none';
+    }
+  });
+
+  // Scroll to top when button is clicked
+  scrollBtn.addEventListener('click', () => {
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth'
+    });
+  });
+
+  // Page Load Animation
+  window.addEventListener('load', () => {
+    document.body.style.opacity = '0';
+    document.body.style.transition = 'opacity 0.5s ease';
+    
+    setTimeout(() => {
+      document.body.style.opacity = '1';
+    }, 100);
+  });
+
+  // Simple Search Functionality
+  const searchBox = document.querySelector('.search-box');
+  
+  searchBox.addEventListener('keypress', function(e) {
+    if (e.key === 'Enter') {
+      const searchTerm = this.value;
+      if (searchTerm.trim() !== '') {
+        alert(`Searching for: ${searchTerm}`);
+        this.value = ''; // Clear search box
+        // You can add actual search functionality here later
+      }
+    }
+  });
+
+  // Order Now Buttons
+  const orderButtons = document.querySelectorAll('.btn');
+  
+  orderButtons.forEach(button => {
+    if (button.textContent.includes('ORDER NOW') || button.textContent.includes('ORDER NOW ➜')) {
+      button.addEventListener('click', function() {
+        alert('Redirecting to order page...');
+        // You can add actual order page navigation here
+      });
+    }
+  });
+
+  // View More Buttons
+  const viewMoreButtons = document.querySelectorAll('.view-more .btn');
+  
+  viewMoreButtons.forEach(button => {
+    button.addEventListener('click', function() {
+      alert('Loading more delicious items...');
+      // You can add actual "load more" functionality here
+    });
+  });
+
+  console.log('QuickBite website JavaScript loaded successfully!');
+</script>
 
 </html>
